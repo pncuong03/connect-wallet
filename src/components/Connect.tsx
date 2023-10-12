@@ -1,5 +1,3 @@
-'use client'
-
 import { BaseError } from 'viem'
 import { useAccount, useConnect, useDisconnect } from 'wagmi'
 
@@ -8,7 +6,6 @@ export function Connect() {
   const { connect, connectors, error, isLoading, pendingConnector } =
     useConnect()
   const { disconnect } = useDisconnect()
-
   return (
     <div>
       <div>
